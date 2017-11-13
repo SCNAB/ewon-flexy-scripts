@@ -37,12 +37,10 @@ FUNCTION checkAlarm()
   IF(A$ <> "") THEN
     IF((GETIO tagName$) <> 1) THEN
       SETIO tagName$, 1
-      Print "1"
     ENDIF
   ELSE
     IF((GETIO tagName$) <> 0) THEN
       SETIO tagName$, 0
-      Print "0"
     ENDIF
   ENDIF
   CLOSE 1

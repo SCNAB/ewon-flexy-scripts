@@ -96,16 +96,6 @@ End
 Rem --- eWON end section: Core
 Rem --- eWON start section: Misc.
 Rem --- eWON user (start)
-//**************************************************************
-//    A pretty useless script that does nothing, really
-//      PARAMS
-//      $szMessage$    :  Message to show shit
-//      $bVisType%     :  1-2 deciding how to show the message
-//      $bMail         :  Send mail or nah?
-//
-//    By: Jonathan Öhrström | jonathan.ohrstrom@scn.se
-//**************************************************************
-
 FUNCTION log($szMessage$)
   Print "Log: " + $szMessage$
 ENDFN

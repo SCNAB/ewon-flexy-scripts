@@ -19,11 +19,11 @@ Rem --- eWON user (start)
 //**************************************************************
 
 // Script configs
-tagName$       =  "myTag" // The tag name with alarm enabled
+tagName$       =  "myTag"            // The tag name with alarm enabled
 email$         =  "name@company.com" // Primary email to get notified. Separate several emails with ;
-ccMail$        =  "" // Carbon Copy. Leave empty to ignore. Separate several emails with ;
-alarmCounter%  =  1 // Enable a tag tracking amount of alarms that has been fired?
-counterTag$    =  "AlarmTimes" // If alarmCounter% is set to 1, this is the tag name for tracking alarms
+ccMail$        =  ""                 // Carbon Copy. Leave empty to ignore. Separate several emails with ;
+alarmCounter%  =  1                  // Enable a tag tracking amount of alarms that has been fired?
+counterTag$    =  "AlarmTimes"       // If alarmCounter% is set to 1, this is the tag name for tracking alarms
 
 ONALARM (GETIO tagName$), "@AlarmIncr()"
 ONTIMER 1, "@alarmReminder()"

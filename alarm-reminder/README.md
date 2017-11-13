@@ -6,10 +6,10 @@ The emails will be sent if there's an active alarm that has **not** been acknowl
 
 ### Configuration
 ```java
-tagName$       =  "myTag" // The tag name with alarm enabled
+tagName$       =  "myTag"            // The tag name with alarm enabled
 email$         =  "name@company.com" // Primary email to get notified. Separate several emails with ;
-ccMail$        =  "" // Carbon Copy. Leave empty to ignore. Separate several emails with ;
-emailTimer%     =  900 // In seconds, how often should checks and emails be sent?
-alarmCounter%  =  1 // Enable a tag tracking amount of alarms that has been fired?
-counterTag$    =  "AlarmTimes" // If alarmCounter% is set to 1, this is the tag name for tracking alarms
+ccMail$        =  ""                 // Carbon Copy. Leave empty to ignore. Separate several emails with ;
+emailTimer%     =  900               // In seconds, how often should checks and emails be sent?
+alarmCounter%  =  1                  // Enable a tag tracking amount of alarms that has been fired?
+counterTag$    =  "AlarmTimes"       // If alarmCounter% is set to 1, this is the tag name for tracking alarms
 ```
